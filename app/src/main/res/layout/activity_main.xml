@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health: 100"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:margin="10dp" />
+
+    <TextView
+        android:id="@+id/tvHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hunger: 0"
+        android:layout_below="@id/tvHealth"
+        android:layout_centerHorizontal="true"
+        android:margin="10dp" />
+
+    <TextView
+        android:id="@+id/tvCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleanliness: 100"
+        android:layout_below="@id/tvHunger"
+        android:layout_centerHorizontal="true"
+        android:margin="10dp" />
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed"
+        android:layout_below="@id/tvCleanliness"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean"
+        android:layout_below="@id/tvCleanliness"
+        android:layout_toRightOf="@id/btnFeed"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
